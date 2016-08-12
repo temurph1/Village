@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Single Mommies Village</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag '**defaults**', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<style>
+/* CUSTOMIZE THE image
+    -------------------------------------------------- */
+
+    /* image base class */
+    .image {
+      margin-bottom: 60px;
+    }
+
+    .image .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .image-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .image .item {
+      height: 500px;
+	  object-fit: cover;
+    }
+    .image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+	  object-fit: cover;
+      height: 500px;
+    }
+
+    .image-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .image-caption h1,
+    .image-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .image-caption .btn {
+      margin-top: 10px;
+    }
+
+	
+</style>
+	
+ <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SingleMommiesVillage</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+				    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+ <div id="myimage" class="image slide">
+      <div class="image-inner">
+        <div class="item active">
+          <img src="/images/mother1.jpeg" alt="">
+          <div class="container">
+            <div class="image-caption">
+              <h1>Form a Network With Other Moms</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Get started now</a>
+            </div>
+          </div>
+        </div>
+		
+		<div class="container">
+		<h1 style="text-align: center; padding:10px">Lorem ipsum dolor sit amet.</h1>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu fermentum tellus. Suspendisse in orci blandit, rutrum odio finibus, ultrices lorem. Pellentesque at lacus aliquam, cursus tortor vitae, aliquam justo. Sed volutpat lectus nec diam ullamcorper vulputate. Nunc porttitor, ex a congue finibus, justo justo fermentum diam, in egestas elit nisl vel augue. Suspendisse eget odio pulvinar, lacinia felis vitae, dapibus arcu. Nam accumsan, erat ut ullamcorper blandit, mauris erat elementum tortor, pharetra dictum dui magna blandit ante. Vestibulum at sapien tortor. Donec auctor tincidunt lobortis. Maecenas ac eros vitae ex tincidunt feugiat vel ac velit. Nulla finibus non risus et vulputate.
+
+Praesent condimentum, lectus quis ultricies porta, erat elit iaculis tortor, eget gravida sapien dui ac nisl. Vestibulum tincidunt orci quam, mollis aliquet mi luctus a. Nullam non vulputate velit, at euismod purus. Phasellus aliquet faucibus lorem, eu tincidunt sapien facilisis egestas. Nunc mattis sapien in odio efficitur, nec commodo leo sagittis. Curabitur facilisis tempor elit, id vulputate ipsum vehicula non. Mauris vestibulum ullamcorper arcu, eu rhoncus est posuere ac. Proin eu nunc gravida, viverra arcu vel, placerat odio. Aliquam at leo ut nisl egestas sodales. Vestibulum et tincidunt neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh nec lectus congue fermentum ac ac orci.
+
+Nullam fermentum, nibh ac ornare efficitur, diam diam pellentesque elit, et rutrum velit ipsum nec elit. Cras condimentum risus varius, finibus est in, maximus eros. Proin faucibus libero placerat ante ornare, ut rhoncus sem finibus. Suspendisse vel est fermentum, volutpat lectus commodo, pellentesque lacus. Integer nec ante placerat, sodales felis ut, fermentum diam. Quisque in massa dapibus, elementum tortor et, rutrum magna. Integer facilisis auctor tellus, eget commodo erat aliquam sit amet. Sed massa erat, pretium et lectus vitae, efficitur cursus sapien. Sed eu volutpat ligula. Fusce tempor mi non purus suscipit blandit. Praesent id odio at augue sagittis placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</h2> 
+		</div>
+
+<%= yield %>
+
+</body>
+</html>
